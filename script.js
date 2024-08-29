@@ -49,11 +49,11 @@ function toggleMenuButton(){
     let menu_ul = document.getElementById("pages");
 
     if(menu_ul.classList.contains("collaps-nav")){
-        menu_ul.style.top = "-200px";
+        menu_ul.style.top = "-500px";
         menu_ul.classList.remove("collaps-nav");
     }
     else{
         menu_ul.classList.add("collaps-nav");
-        menu_ul.style.top = "70px";
+        menu_ul.style.top = "65px";
     }
 }

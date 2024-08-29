@@ -40,6 +40,9 @@
 ::-webkit-scrollbar {
     width: 5px;
   }
+::-webkit-scrollbar {
+    width: 5px;
+  }
   
   /* Track */
   ::-webkit-scrollbar-track {
@@ -64,8 +67,12 @@ body{
 }
 
 nav{
+    z-index: 3;
     position: relative;
-    z-index: 10;
+}
+.nav-div{
+    background-color: white;
+    z-index:4;
     background-color:var(--theam);
     display: flex;
     flex-wrap: wrap;
@@ -75,13 +82,13 @@ nav{
 #site-name{
     margin:5px;
 }
-nav #collaps-menu-btn{
+.nav-div #collaps-menu-btn{
     margin-left: auto;
     margin-right: 5px;
     display: none;
     height: 30px;
 }
-nav ul{
+.nav-div ul{
     list-style: none;
     display: flex;
     margin-left: auto;
@@ -89,11 +96,11 @@ nav ul{
     overflow: hidden;
 }
 
-nav ul li{
+.nav-div ul li{
     margin: 0px 10px;
 }
 
-nav a{
+.nav-div a{
     text-decoration: none;
     color: var(--theam-color);
     display: flex;
@@ -101,11 +108,11 @@ nav a{
     text-wrap: nowrap;
 }
 
-nav a .nav-link-icon{
+.nav-div a .nav-link-icon{
     height: 20px;
 }
 
-nav a:hover{
+.nav-div a:hover{
     filter:brightness(0);
 }
 
@@ -116,8 +123,8 @@ nav a:hover{
 }
 
 aside #floating-sec{
-    z-index: 2;
     position: fixed;
+    z-index: 1;
     right: -120px;
     top:150px;
     transition: right 1s ease-out;
@@ -320,6 +327,11 @@ aside #floating-sec li a img{
     grid-template-columns: 1fr 2fr;
     padding: 20px 30px;
 }
+#contact .sec-content .left-sec{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin:15px;
+}
 #contact .sec-content .left-sec .desc-contact p:nth-child(1){
     font-size: x-large;
     color: var(--theam-sky);
@@ -360,6 +372,10 @@ aside #floating-sec li a img{
     width: 30px;
     border-radius: 3px;
 }
+#contact .sec-content .right-sec{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
 #contact .sec-content .right-sec iframe{
     width: 100%;
     height: 920px;
@@ -385,7 +401,7 @@ aside #floating-sec li a img{
     opacity: 0%;
     transition-property:opacity bottom;
     transition-duration: 0.5s;
-    z-index: 10;
+    z-index: 3;
 }
 #go-to-top-btn img{
     height: 35px;  
@@ -396,30 +412,50 @@ aside #floating-sec li a img{
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 700px){
-    nav ul{
+    .nav-div ul{
         display: inline-block;
         width: 100%;
         position: absolute;
-        background-color: white;
-        top:-200px;
-        right: 0px;
-        z-index: 1;
-        transition: 0.75s top ease-out;
+        z-index: -1;
+        background-color: var(--theam-sky);
+        top:-400px;
+        right: 0vw;
+        transition: 0.5s top ease-out;
+        display: block;
+        border-radius: 0px 0px 5px 5px;
     }
     
-    nav ul li{
-        
+    .nav-div ul li{
+        background-color: white;
         text-align: center;
         box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.219);
-        margin: 5px 0px;
+        margin: 5px 5px;
         border-radius: 5px;
     }
-    nav ul li a{
+    .nav-div ul li a{
         padding: 5px 7px;
-        display: flex;
+        display: inline-flex;
     }
-    nav #collaps-menu-btn{
+    .nav-div #collaps-menu-btn{
         display: inline-block;
+    }
+
+    #contact .sec-content{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    #contact .sec-content .left-sec{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #contact .sec-content .right-sec{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border-top: 1px solid var(--theam-sky);
     }
 }
 @media only screen and (max-width: 600px){
@@ -434,6 +470,13 @@ aside #floating-sec li a img{
         width: 75%;
         padding: 20px 0px;
     }
+    #intro > .sec-content > .left-sec div > h3{
+        font-size: x-large;
+    }
+    #intro > .sec-content > .left-sec div > h4{
+        font-size: large;
+        text-align: left;
+    }
 }
 @media only screen and (max-width: 550px){
     #i-can-do{
@@ -442,8 +485,6 @@ aside #floating-sec li a img{
     #intro > .sec-content > .right-sec #profile_image{
         width: 80%;
     }
-}
-@media only screen and (max-width: 400px) {
     #intro > .sec-content > .left-sec div > h3{
         font-size: large;
     }
@@ -451,6 +492,12 @@ aside #floating-sec li a img{
         font-size: medium;
         text-align: left;
     }
+}
+@media only screen and (max-width: 500px) {
+    
+}
+@media only screen and (max-width: 400px) {
+    
     #intro > .sec-content > .left-sec div{
         text-align:left;
     }

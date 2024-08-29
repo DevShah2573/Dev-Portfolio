@@ -20,7 +20,7 @@
 <body id="top">
 
     <!-- ⚠️Site work in Progress banner -->
-    <div id="temp-note-div" style="padding: 20px; background-color: red;color: white;text-align: center;display: flex;">
+    <div id="temp-note-div" style="position: relative;z-index: 5;padding: 20px; background-color: red;color: white;text-align: center;display: flex;">
         <span>
             ⚠️ Currently website work in progress!
         </span>
@@ -29,51 +29,53 @@
 
 
     <nav>
-        <!-- Logo/Site Name of website -->
-        <div id="logo-div">
-            <a href="/MySite.html">
-                <h1 id="site-name">
-                    DEV SHAH
-                </h1>
-            </a>
-        </div>    
-
-        <!-- Menu Button for samll screens -->
-        <img id="collaps-menu-btn" src="./icons/menu icon svg.svg" alt="" onclick="toggleMenuButton()">
-
-        
-        <ul id="pages" class="open-nav">
-            <li>
-                <a href="#intro">
-                    <img class="nav-link-icon" src="./icons/home icon svg.svg" alt="">
-                    &nbsp;Intro
+        <div class="nav-div">
+            <!-- Logo/Site Name of website -->
+            <div id="logo-div">
+                <a href="/MySite.html">
+                    <h1 id="site-name">
+                        DEV SHAH
+                    </h1>
                 </a>
-            </li>
-            <li>
-                <a href="#about-me">
-                    <img class="nav-link-icon" src="./icons/person icon svg.svg" alt="">
-                    &nbsp;About me
-                </a>
-            </li>
-            <li>
-                <a href="#portfolio">
-                    <img class="nav-link-icon" src="./icons/portfolio icon svg.svg" alt="">
-                    &nbsp;Portfolio
-                </a>
-            </li>
-            <li>
-                <a href="#contact">
-                    <img class="nav-link-icon" src="./icons/contact icon svg.svg" alt="">
-                    &nbsp;Contact
-                </a>
-            </li>
-            <li>
-                <a href="#blog">
-                    <img class="nav-link-icon" src="./icons/article icon svg.svg" alt="">
-                    &nbsp;Blog
-                </a>
-            </li>
-        </ul>
+            </div>    
+    
+            <!-- Menu Button for samll screens -->
+            <img id="collaps-menu-btn" src="./icons/menu icon svg.svg" alt="" onclick="toggleMenuButton()">
+    
+            
+            <ul id="pages" class="open-nav">
+                <li>
+                    <a href="#intro">
+                        <img class="nav-link-icon" src="./icons/home icon svg.svg" alt="">
+                        &nbsp;Intro
+                    </a>
+                </li>
+                <li>
+                    <a href="#about-me">
+                        <img class="nav-link-icon" src="./icons/person icon svg.svg" alt="">
+                        &nbsp;About me
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio">
+                        <img class="nav-link-icon" src="./icons/portfolio icon svg.svg" alt="">
+                        &nbsp;Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <img class="nav-link-icon" src="./icons/contact icon svg.svg" alt="">
+                        &nbsp;Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="#blog">
+                        <img class="nav-link-icon" src="./icons/article icon svg.svg" alt="">
+                        &nbsp;Blog
+                    </a>
+                </li>
+            </ul>
+        </div>
         
         
     </nav>
