@@ -57,3 +57,12 @@ function toggleMenuButton(){
         menu_ul.style.top = "65px";
     }
 }
+
+
+// More About Me Button transition effect 
+function moreAboutMeTransitionOver(){
+    document.getElementById("more_about_icon").style.width = "40px";
+}
+function moreAboutMeTransitionOut(){
+    document.getElementById("more_about_icon").style.width = "0px";
+}
