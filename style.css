@@ -338,11 +338,11 @@ aside #floating-sec li a img{
     align-items: center;
 }
 #about-me .sec-content div#skills #skills-images img{
-    width: 100px;
+    width: 70px;
     border-radius: 15px;
     margin:10px 20px 10px 0px;
     box-shadow:2px 2px 5px black;
-    padding: 5px;
+    padding: 3px;
 }
 
 
