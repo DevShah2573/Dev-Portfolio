@@ -66,3 +66,31 @@ function moreAboutMeTransitionOver(){
 function moreAboutMeTransitionOut(){
     document.getElementById("more_about_icon").style.width = "0px";
 }
+
+
+// Slide show
+async function projectSlideShow(){
+    let projects = document.getElementsByClassName('project-slides');
+    for(let i = 0; i<projects.length ; i++){
+        imageSlider(projects[i].getElementsByClassName("project-slide"))
+    }
+}
+async function imageSlider(images){
+    let n = images.length;
+    while(true){
+        await sleep(2000);
+        for(let i = 1; i < n ; i++){
+            images[i].style.opacity = "0%";
+            images[i].style.left = "-100%";
+        }
+        for(let i = 1; i < n ; i++){
+            await sleep(2500);
+            images[i].style.opacity = "100%";
+            images[i].style.left = "0%";
+        }
+        for(let i = 1; i < n ; i++){
+            images[i].style.opacity = "0%";
+        }
+    }
+}
+projectSlideShow()

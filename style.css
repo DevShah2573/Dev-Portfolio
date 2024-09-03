@@ -367,13 +367,16 @@ aside #floating-sec li a img{
     display: flex;
     flex-wrap: wrap;
 }
+#portfolio .sec-content #projects .project a{
+    text-decoration: none;
+    color: var(--theam-font);
+}
 #portfolio .sec-content #projects .project{
     margin: 15px auto;
     background-color: white;
     border-radius: 10px;
     padding: 5px;
-    width: 300px;
-    /* border:2px solid red; */
+    width: 350px;
     box-shadow: 1px 1px 5px 2px var(--theam-bg-heading);
 }
 #portfolio .sec-content #projects .project .project-title{
@@ -384,23 +387,40 @@ aside #floating-sec li a img{
     color: var(--theam-sky);
 }
 #portfolio .sec-content #projects .project .project-title h5{
+    font-size: small;
 }
 #portfolio .sec-content #projects .project .project-slides{
     width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: var(--theam-font); 
+    border-radius: 5px;
+    position: relative;
+
 }
 #portfolio .sec-content #projects .project .project-slides .project-slide{
-    width: 100%;
-    height: 175px;
-    border-radius: 5px;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    left: 0;
+    border-radius: inherit;
+    transition: 1s left ease-out , 0.5s transform ease;
+    transform: scale(1,1);
 }
+
+#portfolio .sec-content #projects .project .project-slides .project-slide:hover{
+    transform: scale(1.5,1.5);
+    z-index: 2;
+}
+
 #portfolio .sec-content #projects .project .project-technologies{
-    /* padding-bottom: 5px; */
+    width: fit-content;
+    margin: auto;
 }
 #portfolio .sec-content #projects .project .project-technologies .project-technology{
     font-size: 12px;
     padding: 2px 5px;
     border-radius: 5px; 
-    font-family:  Courier, monospace;
     background-color: var(--theam-bg-heading);
 }
 
