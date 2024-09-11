@@ -2,7 +2,7 @@ window.onscroll = showSideLinks;
 function showSideLinks(){
     if(document.body.scrollTop>50 || document.documentElement.scrollTop>50){
         // For the aside page links
-        document.getElementById("floating-sec").style.right = "-80px";
+        document.getElementById("floating-sec").style.right = "-90px";
         
         // For the go to top button 
         document.getElementById("go-to-top-btn").style.opacity = "100%";
@@ -10,7 +10,7 @@ function showSideLinks(){
     }
     else{
         // For the aside page links
-        document.getElementById("floating-sec").style.right = "-120px";
+        document.getElementById("floating-sec").style.right = "-150px";
         
         // For the go to top button 
         document.getElementById("go-to-top-btn").style.opacity = "0%";

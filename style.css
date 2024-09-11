@@ -126,7 +126,7 @@ nav{
 aside #floating-sec{
     position: fixed;
     z-index: 1;
-    right: -120px;
+    right: -150px;
     top:150px;
     transition: right 1s ease-out;
 }
@@ -135,7 +135,7 @@ aside #floating-sec li {
     list-style: none;
     margin: 5px 0px;
     padding:6px 6px;
-    border-radius: 7px;
+    border-radius: 7px 0px 0px 7px;
     background-color: var(--theam-bg);
     position: relative;
     transition: right 0.5s ease-in-out;
@@ -143,7 +143,7 @@ aside #floating-sec li {
     box-shadow:1px 1px 4px var(--theam-bg-heading);
 }
 aside #floating-sec li:hover{
-    right:85px;
+    right:88px;
 }
 
 aside #floating-sec li a{
@@ -616,6 +616,28 @@ aside #floating-sec li a img{
     border-top-right-radius: 70px;
     border-right: 30px double var(--theam-yellow);
     border-bottom:3px solid var(--theam-yellow) ;
+}
+#blog .sec-content p{
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+}
+#blog .sec-content p a{
+    color: var(--theam-sky);
+}
+#blog .sec-content p a img{
+    width: 15px;
+}
+#blog #my-blog-iframe{
+    width: 90%;
+    height: 75vh;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px -3px black;
+    border-radius: 15px;
+}
+#blog #my-blog-iframe iframe{
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
 }
 
 /* GO TO TOP BUTTON */
