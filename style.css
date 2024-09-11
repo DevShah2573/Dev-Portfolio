@@ -327,7 +327,9 @@ aside #floating-sec li a img{
     padding: 20px 30px;
     
 }
-
+#about-me .sec-content p{
+    margin-right: 15px;
+}
 #about-me .sec-content div#skills h3{
     color: var(--theam-color);
     margin: 20px 0px 10px 0px;
@@ -350,7 +352,121 @@ aside #floating-sec li a img{
     box-shadow:2px 2px 5px rgb(111, 111, 111);
     padding: 3px;
 }
-
+#about-me .sec-content .my-info{
+    display: flex;
+    flex-wrap: wrap;
+    text-align:left;
+    margin: 20px 0px;
+}
+#about-me .sec-content .my-info h3{
+    margin: 10px 0px;
+    color: var(--theam-color);
+}
+#about-me .sec-content .my-info #personal-info{
+    width: 400px;
+    margin: auto;
+    align-self: flex-start;
+}
+#about-me .sec-content .my-info #personal-info table{
+    /* border: 2px solid red; */
+    background: var(--theam-sky-03);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 1px 1px 10px -8px black;
+}
+#about-me .sec-content .my-info #personal-info table tr td{
+    padding-bottom:10px;
+}
+#about-me .sec-content .my-info #personal-info .per-info-field{
+    padding: 5px 0px;
+}
+#about-me .sec-content .my-info #personal-info .per-info-field td:nth-child(1){
+    font-weight: bold;
+    display: inline-block;
+    width: 93px;
+}
+#about-me .sec-content .my-info #personal-info .per-info-field td:nth-child(1)::after{
+    content: ":";
+}
+#about-me .sec-content .my-info #personal-info .per-info-field td:nth-child(2){
+    padding-left: 5px;
+}
+#about-me .sec-content .my-info #cv-download-sec{
+    margin: 20px 0px;
+}
+#about-me .sec-content .my-info #cv-download-sec a{
+    /* border: 2px solid var(--theam-yellow); */
+    /* box-shadow: 0px 0px 4px 2px var(--theam-yellow); */
+    border-radius: 40px;
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--theam-sky) ;
+    text-decoration: none;
+    transition: 0.05s box-shadow ease-in-out;
+}
+#about-me .sec-content .my-info #cv-download-sec a:hover{
+    /* border: 2px solid var(--theam-yellow); */
+    box-shadow: 0px 0px 5px limegreen,inset 0px 0px 1px 1px white;
+}
+#about-me .sec-content .my-info #cv-download-sec a:active{
+    /* border: 2px solid var(--theam-yellow); */
+    box-shadow: 0px 0px 5px limegreen,inset 0px 0px 1px 1px rgb(0, 0, 0);
+}
+#about-me .sec-content .my-info #cv-download-sec a span{
+    padding: 5px 10px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+#about-me .sec-content .my-info #cv-download-sec img{
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    margin: 4px 4px 4px 0px;
+    padding: 5px;
+    box-shadow:inset 0px 0px 4px var(--theam-yellow);
+}
+#about-me .sec-content .my-info #experience-info{
+    width:400px;
+    margin: auto;
+}
+#about-me .sec-content .my-info #experience-info .position{
+    position: relative;
+    background-color: var(--theam-sky-03);
+    padding: 15px 10px 10px 15px;
+    border-radius: 10px;
+    margin: 20px 0px;
+    box-shadow: 0.5px 0.5px 5px -3px black;
+}
+#about-me .sec-content .my-info #experience-info .position-period{
+    position: absolute;
+    top:-9px;
+    left:10px;
+    padding: 2px 5px;
+    background-color: var(--theam-sky);
+    color: white;
+    display: inline-block;
+    border-left: 4px solid var(--theam-yellow);
+    /* border-right: 1px solid black; */
+    border-radius:15px;
+    font-size:10px;
+    margin-bottom:5px;
+}
+#about-me .sec-content .my-info #experience-info .position-title{
+    font-weight: bold;
+}
+#about-me .sec-content .my-info #experience-info .position-place{
+    font-weight: bold;
+    color: var(--theam-sky);
+}
+.position-description{
+    margin-top: 3px;
+    font-size: medium;
+}
+.position-performance{
+    color:limegreen;
+    font-weight: bold;
+}
 
 /* PORTFOLIO SECTION */
 #portfolio{
