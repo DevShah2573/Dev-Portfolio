@@ -657,6 +657,12 @@ aside #floating-sec li a img{
     box-shadow: 1px 1px 5px var(--theam-bg-heading);
 }
 
+/* Footer */
+.footer-main-div{
+    background-color: var(--theam-yellow);
+    padding: 10px;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 700px){
     .nav-div ul{
@@ -753,7 +759,4 @@ aside #floating-sec li a img{
     #intro > .sec-content > .left-sec div{
         text-align:left;
     }
-}
-@media only screen and (max-width: 300px) {
-
 }
