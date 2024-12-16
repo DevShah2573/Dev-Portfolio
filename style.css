@@ -193,7 +193,10 @@ aside #floating-sec li a img{
 .sec-content{
     text-align: justify;
 }
-
+/* Cover */
+#cover img{
+    width: 100%;
+}
 
 /* INTRO SECTION */
 #intro{
@@ -341,14 +344,15 @@ aside #floating-sec li a img{
 }
 #about-me .sec-content div#skills #skills-images div{
     display: block;
-    width: 90px;
+    width: 120px;
     padding-right: 20px;
     margin:10px auto;
 }
 #about-me .sec-content div#skills #skills-images img{
     border-radius: 15px;
-    width: 80px;
-    /* margin:10px 20px 10px 0px; */
+    width: 100px;
+    height: 100px;
+    
     box-shadow:2px 2px 5px rgb(111, 111, 111);
     padding: 3px;
 }
@@ -402,15 +406,15 @@ aside #floating-sec li a img{
     align-items: center;
     background-color: var(--theam-sky) ;
     text-decoration: none;
-    transition: 0.05s box-shadow ease-in-out;
+    transition: 0.15s box-shadow ease-in-out;
 }
 #about-me .sec-content .my-info #cv-download-sec a:hover{
     /* border: 2px solid var(--theam-yellow); */
-    box-shadow: 0px 0px 5px limegreen,inset 0px 0px 1px 1px white;
+    box-shadow: 0.5px 0.5px 3px -1px rgb(0, 0, 0);
 }
 #about-me .sec-content .my-info #cv-download-sec a:active{
     /* border: 2px solid var(--theam-yellow); */
-    box-shadow: 0px 0px 5px limegreen,inset 0px 0px 1px 1px rgb(0, 0, 0);
+    box-shadow: inset 0px 0.5px 3px -1px rgb(0, 0, 0);
 }
 #about-me .sec-content .my-info #cv-download-sec a span{
     padding: 5px 10px;
@@ -421,10 +425,10 @@ aside #floating-sec li a img{
 #about-me .sec-content .my-info #cv-download-sec img{
     background-color: white;
     border-radius: 50%;
-    width: 40px;
-    margin: 4px 4px 4px 0px;
-    padding: 5px;
-    box-shadow:inset 0px 0px 4px var(--theam-yellow);
+    width: 39px;
+    margin: 5px 5px 5px 0px;
+    padding: 4px;
+    /* box-shadow:inset 0px 0px 4px var(--theam-yellow); */
 }
 #about-me .sec-content .my-info #experience-info{
     width:400px;
@@ -467,6 +471,7 @@ aside #floating-sec li a img{
     color:limegreen;
     font-weight: bold;
 }
+
 
 /* PORTFOLIO SECTION */
 #portfolio{
