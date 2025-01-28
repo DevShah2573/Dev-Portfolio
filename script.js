@@ -23,7 +23,7 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 async function professions(){
-    const professions_array = ["Web-Development","UI/UX Design","Graphic Design"];
+    const professions_array = ["Software Development","Web-Development","UI/UX Design","Graphic Design"];
     // professions_array.
     let i = 0;
     while(true){
