@@ -442,6 +442,46 @@ aside #floating-sec li a img{
     margin: 20px 0px;
     box-shadow: 0.5px 0.5px 5px -3px black;
 }
+#about-me .currently-present-indicator{
+    display: inline-block;
+    background-color: green;
+    font-size: 10px;
+    color: white;
+    padding: 2px 7px;
+    position:absolute;
+    top:-9px;
+    right:10px;
+    border-radius:15px;
+
+}
+#about-me .currently-present-indicator::after{
+    width: 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+#about-me .currently-present-indicator .indicator-dot{
+    display: inline-block;
+    vertical-align:middle;
+    margin-right:5px;
+    width: 5px;
+    height: 5px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    animation-name: live-dot;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+@keyframes live-dot {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }   
+}
 #about-me .sec-content .my-info #experience-info .position-period{
     position: absolute;
     top:-9px;
